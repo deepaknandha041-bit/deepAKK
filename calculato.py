@@ -1,4 +1,4 @@
-def recur():
+def calculator():
     try:
          a = float(input("Enter first number: "))
          op = input("Enter operator (+, -, *, /): ")
@@ -12,13 +12,18 @@ def recur():
             print("Result:", a * b)
          elif op == "/":
             print("Result:", a / b)
+         elif op== "//":
+            print("Result:", a // b)
+         elif op== "**":
+            print("Result:", a ** b)
          else:
             print("Invalid operator!")
 
     except ValueError:
         print("Try only numericals.")
-        recur()
+        calculator()
     except ZeroDivisionError:
         print("Zero can't be a denominator Try another number.")
-        recur()
-recur()
+        calculator()
+
+calculator()
