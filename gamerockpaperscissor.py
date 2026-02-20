@@ -14,8 +14,14 @@ def game():
         print("You loose!")
     elif (user == "scissors" and computer == "paper"):
         print("You win!")
+    elif (computer == "rock" and user== "scissors"):
+        print("You loose!")
+    elif (computer == "paper" and user == "rock"):
+        print("You loose!")
+    elif (computer == "scissors" and user == "paper"):
+        print("you loose!")
     else:
-        print("Computer wins!") 
+        print("Invalid input! Please enter rock, paper, or scissors.") 
     again = input("Do you want to play again? (yes/no): ")
     if again == "yes":
         game()  

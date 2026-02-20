@@ -10,7 +10,7 @@ class SmartPhone(Phone, Camera):
     def browse(self):
         return "Can browse the internet"
 
-# Create object
+
 s = SmartPhone()
 
 print(s.call())
